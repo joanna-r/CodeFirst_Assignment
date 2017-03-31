@@ -12,11 +12,6 @@
 		color: rgba(204, 18, 18, 1);
 		font-family: 'Kristen ITC';
 	}
-	ul{text-align: center;
-		font-size: 20px;
-		padding: 20px;
-		background: rgba(244, 112, 16, 0.5);
-	}
 	li{display: inline;
 		padding: 15px;
 		font-family: 'ebrima';
@@ -75,16 +70,14 @@
 	</h1>
 	
 </header>
-		<ul>
-			<li> <a href="#"> Home </a> </li>
-			<li> <a href="#"> Deals </a> </li>
-			<li> <a href="#"> Find someone </a> </li>
-			<li> <a href="#"> Contact </a> </li>
-
-		</ul>
-</head>
-<body>
-<article> 
+	<div class="tab">
+		<button class ="tablinks" onclick="openCity(event, 'Home')">Deals</button>
+		<button class ="tablinks" onclick="openCity(event, 'Deals')">Deals</button>
+		<button class ="tablinks" onclick="openCity(event, 'Find someone')">Deals</button>
+		<button class ="tablinks" onclick="openCity(event, 'Contact')">Deals</button>
+	</div>
+	
+	<div id="Home" class="tabcontent">
 	<h2> Find a fellow foodie in your area and share great money off deals!</h2>
 	<h5> <u> How it works </u>
 	</h5>
@@ -100,7 +93,6 @@
 		4. Have a chat, arrange to meet up and take full advantage of 2 for 1 deals!<br>
 	
 	</div>
-</article>
 <article> 
 	<h3> <u> Get Started </u>
 	</h3>
@@ -138,4 +130,23 @@
 		<img src="twitter_image.jpg">
 		<img src="instagram.jpg">
 	</div>
-</body>
+	</div>
+	
+	<div id="Deals" class="tabcontent">
+		<p> Great local deals! </p>
+	</div>
+	
+	<div id="Find someone" class="tabcontent">
+		<p> Find someone in your area! </p>
+	</div>
+	
+	<div id="Find someone" class="tabcontent">
+		<p> Find someone in your area! </p>
+	</div>
+		
+	<div id="Contact" class="tabcontent">
+		<p> Enter your message to your fellow foodie! </p>
+	</div>	
+		
+		
+		
